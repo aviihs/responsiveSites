@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Business Site</title>
+    <link rel="icon" href="asset/icon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-white font-sans">
+    <nav
+      class="bg-blue-700 px-6 md:px-16 lg:px-[190px] py-4 flex justify-between items-center relative"
+    >
+      <div class="text-lg font-bold flex items-center space-x-2">
+        <img src="asset/icon.png" alt="logo" class="w-10 md:w-12" />
+        <span class="font-extrabold text-2xl text-white">Business</span>
+      </div>
+
+      <ul class="hidden font-bold text-md md:flex space-x-6">
+        <li><a href="#" class="hover:text-yellow-400 text-white">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-400 text-white">About Us</a></li>
+        <li>
+          <a href="#" class="hover:text-yellow-400 text-white">Services</a>
+        </li>
+        <li><a href="#" class="hover:text-yellow-400 text-white">Blog</a></li>
+        <li>
+          <a href="#" class="hover:text-yellow-400 text-white">Contact</a>
+        </li>
+        <li><a href="#" class="hover:text-yellow-400 text-white">404</a></li>
+      </ul>
+
+      <div class="hidden md:flex space-x-4">
+        <a href="#" class="text-white text-2xl"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="#" class="text-[#2AA2F0] text-2xl"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="#" class="text-red-600 text-2xl"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="#" class="text-pink-600 text-2xl"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+
+      <button
+        id="menu-btn"
+        class="md:hidden text-white text-2xl focus:outline-none"
+      >
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
+
+      <div
+        id="mobile-menu"
+        class="absolute top-full left-0 w-full bg-blue-800 hidden flex-col space-y-4 p-6 transition-all duration-300"
+      >
+        <a href="#" class="text-white hover:text-yellow-400">Home</a>
+        <a href="#" class="text-white hover:text-yellow-400">About</a>
+        <a href="#" class="text-white hover:text-yellow-400">Our Services</a>
+        <a href="#" class="text-white hover:text-yellow-400">Blog</a>
+        <a href="#" class="text-white hover:text-yellow-400">Contact</a>
+        <a href="#" class="text-white hover:text-yellow-400">404</a>
+      </div>
+    </nav>
+
+    <section
+      class="bg-[url('asset/background.jpg')] px-6 md:px-16 lg:px-[220px] py-20 bg-cover bg-center flex flex-col gap-8 items-start justify-center text-white min-h-[70vh]"
+    >
+      <div class="flex flex-col gap-4 max-w-[600px]">
+        <h1 class="font-extrabold text-4xl md:text-5xl leading-tight">
+          Business consulting with a different approach
+        </h1>
+        <p class="font-light text-sm md:text-base">
+          This is a description for the hero section. Synergestic actionables.
+          Organic growth deep dive but circle back.
+        </p>
+      </div>
+      <button
+        class="text-black hover:text-white hover:bg-amber-500 bg-amber-400 rounded-3xl py-3 px-6 self-start text-sm md:text-base font-semibold transition"
+      >
+        LEARN MORE ABOUT US
+      </button>
+    </section>
+
+    <section
+      class="px-10 md:px-20 py-20  lg:px-[220px] lg:py-32 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+    >
+      <div class="text-gray-800 space-y-4">
+        <p class="text-sm font-semibold text-black uppercase tracking-wide">
+          THIS IS AN OVERLINE
+        </p>
+        <h1 class="text-4xl font-bold text-black leading-tight">
+          Dedicated to excellence in service
+        </h1>
+        <p class="text-lg text-gray-700">
+          Synergestic actionables. Organic growth deep dive but circle back.
+          User generated content in real-time will have multiple couchpoints for
+          resonance.
+        </p>
+        <p class="text-lg text-gray-700">
+          Bring to the table win-win survival strategies to ensure proactive
+          domination. At the end of the day, going forward, a new normal that
+          has evolved from generation.
+        </p>
+      </div>
+      <div>
+        <img
+          src="asset/image02.png"
+          alt="Service Excellence"
+          class="w-full h-auto rounded-lg shadow-lg"
+        />
+      </div>
+    </section>
+    <section class="bg-[#efede7] px-10 md:px-20 lg:px-[220px] py-20">
+      <div class="text-center text-black">
+        <h1 class="text-4xl font-bold text-black leading-loose">
+          Our Services
+        </h1>
+        <p class="text-sm text-gray-700">
+          Check the services we focus on below
+        </p>
+      </div>
+      <div
+        class="text-black grid grid-cols-1 py-10 md:grid-cols-3 gap-4 items-center"
+      >
+        <div
+          class="flex flex-col items-center space-y-4 bg-white rounded-md p-8"
+        >
+          <i class="fa-solid fa-business-time text-gray-700 text-6xl"></i>
+          <h1 class="text-xl font-medium">Business Audits</h1>
+          <p class="text-center text-sm text-gray-700">
+            Synergestic actionables. Organic growth deep dive but what's the
+            real problem we're trying to solve here?
+          </p>
+          <button class="text-sm mt-14 bg-amber-500 px-6 py-2 rounded-2xl">
+            Learn More
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center space-y-4 bg-white rounded-md p-8"
+        >
+          <i class="fa-solid fa-building-columns text-6xl text-gray-700"></i>
+          <h1 class="text-xl font-medium">Organizational Support</h1>
+          <p class="text-center text-sm text-gray-700">
+            Synergestic actionables. Organic growth deep dive but what's the
+            real problem we're trying to solve here?
+          </p>
+          <button class="text-sm mt-14 bg-amber-500 px-6 py-2 rounded-2xl">
+            Learn More
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center space-y-4 bg-white rounded-md p-8"
+        >
+          <i class="fa-solid fa-file-pen text-gray-700 text-6xl"></i>
+          <h1 class="text-xl font-medium">Consulting</h1>
+          <p class="text-center text-sm text-gray-700">
+            Synergestic actionables. Organic growth deep dive but what's the
+            real problem we're trying to solve here?
+          </p>
+          <button class="text-sm mt-14 bg-amber-500 px-6 py-2 rounded-2xl">
+            Learn More
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center space-y-4 bg-white rounded-md p-8"
+        >
+          <i class="fa-solid fa-chess-king text-gray-700 text-6xl"></i>
+          <h1 class="text-xl font-medium">Strategy</h1>
+          <p class="text-center text-sm text-gray-700">
+            Synergestic actionables. Organic growth deep dive but what's the
+            real problem we're trying to solve here?
+          </p>
+          <button class="text-sm mt-14 bg-amber-500 px-6 py-2 rounded-2xl">
+            Learn More
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center space-y-4 bg-white rounded-md p-8"
+        >
+          <i class="fa-solid fa-scale-balanced text-gray-700 text-6xl"></i>
+          <h1 class="text-xl font-medium">Business Law</h1>
+          <p class="text-center text-sm text-gray-700">
+            Synergestic actionables. Organic growth deep dive but what's the
+            real problem we're trying to solve here?
+          </p>
+          <button class="text-sm mt-14 bg-amber-500 px-6 py-2 rounded-2xl">
+            Learn More
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center space-y-4 bg-white rounded-md p-8"
+        >
+          <i class="fa-solid fa-id-card-clip text-gray-700 text-6xl"></i>
+          <h1 class="text-xl font-medium">Human Resources</h1>
+          <p class="text-center text-sm text-gray-700">
+            Synergestic actionables. Organic growth deep dive but what's the
+            real problem we're trying to solve here?
+          </p>
+          <button class="text-sm mt-14 bg-amber-500 px-6 py-2 rounded-2xl">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-[#101935] flex flex-col gap-6 px-10 md:px-20 lg:py-32 lg:px-[220px] py-20"
+    >
+      <div class="text-center text-white max-w-3xl mx-auto px-6 md:px-12">
+        <p class="text-white font-bold text-lg md:text-xl italic">
+          "Synergestic actionables. Organic growth deep dive but circle back, or
+          but what's the real problem we're trying to solve here?"
+        </p>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <img
+          class="rounded-full w-24 h-24 md:w-30 md:h-30 object-cover shadow-lg"
+          src="asset/testimonial.jpg"
+          alt="img"
+        />
+        <h4 class="uppercase pt-6 text-white font-semibold text-lg">
+          Jasoni Johnson
+        </h4>
+        <p class="uppercase text-sm text-gray-400 tracking-wide">
+          CEO, Founder
+        </p>
+      </div>
+    </section>
+    <footer class="bg-[#3e5cc8] text-white text-center py-6">
+      <p class="text-md font-medium">Copyright &#169; || 2025</p>
+      <button id="scrollUpBtn" class="fixed bottom-2 right-2 bg-amber-600 text-white px-4 py-3 rounded-full shadow-lg hidden">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
