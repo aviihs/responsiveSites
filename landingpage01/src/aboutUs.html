@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="asset/blogIcon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans">
+    <nav
+      class="bg-gray-100 px-6 md:px-16 lg:px-[190px] py-4 flex justify-between items-center relative"
+    >
+      <div class="text-lg font-bold flex items-center space-x-2">
+        <img src="asset/icon.png" alt="logo" class="w-10 md:w-12" />
+      </div>
+
+      <ul class="hidden font-bold text-md md:flex space-x-6">
+        <li>
+          <a href="#" class="hover:text-yellow-400 text-gray-800">Home</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-yellow-400 text-gray-800">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-yellow-400 text-gray-800">Services</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-yellow-400 text-gray-800">Blog</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-yellow-400 text-gray-800">Contact</a>
+        </li>
+        <li><a href="#" class="hover:text-yellow-400 text-gray-800">404</a></li>
+      </ul>
+
+      <div class="hidden md:flex space-x-4">
+        <button
+          class="text-white hover:text-gray-800 hover:bg-amber-500 bg-amber-400 rounded-3xl py-2 px-5 self-start text-sm md:text-base font-semibold transition"
+        >
+          Work with us
+        </button>
+      </div>
+
+      <button
+        id="menu-btn"
+        class="md:hidden text-gray-800 text-2xl focus:outline-none"
+      >
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
+
+      <div
+        id="mobile-menu"
+        class="absolute top-full left-0 w-full bg-gray-100 hidden flex-col space-y-4 p-6 transition-all duration-300"
+      >
+        <a href="#" class="text-gray-800 hover:text-yellow-400 self-center"
+          >Home</a
+        >
+        <a href="#" class="text-gray-800 hover:text-yellow-400 self-center"
+          >About</a
+        >
+        <a href="#" class="text-gray-800 hover:text-yellow-400 self-center"
+          >Our Services</a
+        >
+        <a href="#" class="text-gray-800 hover:text-yellow-400 self-center"
+          >Blog</a
+        >
+        <a href="#" class="text-gray-800 hover:text-yellow-400 self-center"
+          >Contact</a
+        >
+        <a href="#" class="text-gray-800 hover:text-yellow-400 self-center"
+          >404</a
+        >
+        <button
+          class="text-white self-center bg-amber-400 px-3 py-2 rounded-2xl hover:text-gray-800 hover:bg-amber-500 font-bold"
+        >
+          Work with us
+        </button>
+      </div>
+    </nav>
+
+    <section
+      class="bg-[#101935] flex flex-col gap-6 px-10 md:px-20 lg:py-52 lg:px-[220px] py-32"
+    >
+      <div class="text-center text-white max-w-3xl mx-auto px-6 md:px-12">
+        <h1 class="text-white font-bold lg:text-6xl text-5xl">About Us</h1>
+      </div>
+    </section>
+
+    <section
+      class="px-10 md:px-20 py-20 lg:px-[220px] lg:py-32 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+    >
+      <div class="text-gray-800 space-y-4">
+        <p class="text-sm font-semibold text-black uppercase tracking-wide">
+          THIS IS AN OVERLINE
+        </p>
+        <h1 class="text-4xl font-bold text-black leading-tight">Our Values</h1>
+        <p class="text-lg text-gray-700">
+          Synergestic actionables. Organic growth deep dive but circle back or
+          but what's the real problem we're trying to solve here?
+        </p>
+        <p class="text-lg text-gray-700">
+          Capitalize on low hanging fruit to identify a ballpark value added
+          activity to beta test. Override the diaital divide with additional
+          chckthroughs from DevOps. Nanotechnology immersion along the
+          information highway will close the loop on focusing solely on the
+          bottom line.
+        </p>
+      </div>
+      <div>
+        <img
+          src="asset/aboutus01.png"
+          alt="Service Excellence"
+          class="w-full h-auto rounded-lg shadow-lg"
+        />
+      </div>
+    </section>
+
+    <section
+      class="px-10 md:px-20 py-20 lg:px-[220px] lg:py-32 grid grid-cols-1 md:grid-cols-4 gap-10 items-center"
+    >
+      <div class="text-gray-800 space-y-2">
+        <img src="asset/aboutus4.png" alt="blog01" />
+        <h1 class="text-2xl tracking-wide font-bold text-black leading-loose">
+          People First
+        </h1>
+        <p class="text-start pb-6 text-sm tracking-wide text-gray-700">
+          Synergestic actionables. Organic growth deep dive but circle back.
+        </p>
+      </div>
+      <div class="text-gray-800 space-y-2">
+        <img src="asset/aboutus1.png" alt="blog01" />
+        <h1 class="text-2xl tracking-wide font-bold text-black leading-loose">
+          Quality of Work
+        </h1>
+        <p class="text-start pb-6 text-sm tracking-wide text-gray-700">
+          Synergestic actionables. Organic growth deep dive but circle back.
+        </p>
+      </div>
+      <div class="text-gray-800 space-y-2">
+        <img src="asset/aboutus2.png" alt="blog01" />
+        <h1 class="text-2xl tracking-wide font-bold text-black leading-loose">
+          Dedications
+        </h1>
+        <p class="text-start pb-6 text-sm tracking-wide text-gray-700">
+          Synergestic actionables. Organic growth deep dive but circle back.
+        </p>
+      </div>
+      <div class="text-gray-800 space-y-2">
+        <img src="asset/aboutus3.png" alt="blog01" />
+        <h1 class="text-2xl tracking-wide font-bold text-black leading-loose">
+          Expertise
+        </h1>
+        <p class="text-start pb-6 text-sm tracking-wide text-gray-700">
+          Synergestic actionables. Organic growth deep dive but circle back.
+        </p>
+      </div>
+    </section>
+
+ 
+
+      <footer class="bg-[#101935]  text-white text-center py-6">
+        <p class="text-md font-bold">Copyright &#169; || 2025</p>
+        <button id="scrollUpBtn" class="fixed bottom-2 right-2 bg-amber-600 text-white px-4 py-3 rounded-full shadow-lg hidden">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

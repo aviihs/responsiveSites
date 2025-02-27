@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
     <link href="./output.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -11,7 +12,185 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="asset/icon.png" />
+    <link rel="icon" href="asset/contact-img.png" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="text-white font-sans">
+
+  <body class=" font-sans">
+    <nav
+      class="bg-gray-100 px-6 md:px-16 lg:px-[190px] py-4 flex justify-between items-center relative"
+    >
+      <div class="text-lg font-bold flex items-center space-x-2">
+        <img src="asset/icon.png" alt="logo" class="w-10 md:w-12" />
+      </div>
+
+      <ul class="hidden font-bold text-md md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-yellow-400 text-gray-800">Home</a></li>
+        <li>
+          <a href="aboutUs.html" class="hover:text-yellow-400 text-gray-800">About Us</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-yellow-400 text-gray-800">Services</a>
+        </li>
+        <li><a href="blog.html" class="hover:text-yellow-400 text-gray-800">Blog</a></li>
+        <li>
+          <a href="contact.html" class="hover:text-yellow-400 text-gray-800">Contact</a>
+        </li>
+        <li><a href="#" class="hover:text-yellow-400 text-gray-800">404</a></li>
+      </ul>
+
+      <div class="hidden md:flex space-x-4">
+        <button
+          class="text-white hover:text-gray-800 hover:bg-amber-500 bg-amber-400 rounded-3xl py-2 px-5 self-start text-sm md:text-base font-semibold transition"
+        >
+          Work with us
+        </button>
+      </div>
+
+      <button
+        id="menu-btn"
+        class="md:hidden text-gray-800 text-2xl focus:outline-none"
+      >
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
+
+      <div
+        id="mobile-menu"
+        class="absolute top-full left-0 w-full bg-gray-100 hidden flex-col space-y-4 p-6 transition-all duration-300"
+      >
+        <a href="index.html" class="text-gray-800 hover:text-yellow-400 self-center"
+          >Home</a
+        >
+        <a href="aboutUs.html" class="text-gray-800 hover:text-yellow-400 self-center"
+          >About</a
+        >
+        <a href="#" class="text-gray-800 hover:text-yellow-400 self-center"
+          >Our Services</a
+        >
+        <a href="blog.html" class="text-gray-800 hover:text-yellow-400 self-center"
+          >Blog</a
+        >
+        <a href="contact.html" class="text-gray-800 hover:text-yellow-400 self-center"
+          >Contact</a
+        >
+        <a href="#" class="text-gray-800 hover:text-yellow-400 self-center">404</a>
+        <button
+          class="text-white self-center bg-amber-400 px-3 py-2 rounded-2xl hover:text-gray-800 hover:bg-amber-500 font-bold"
+        >
+          Work with us
+        </button>
+      </div>
+    </nav>
+
+    <section
+      class="bg-[#101935] flex flex-col gap-6 px-10 md:px-20 lg:py-52 lg:px-[220px] py-32"
+    >
+      <div class="text-center text-white max-w-3xl mx-auto px-6 md:px-12">
+        <h1 class="text-white font-bold lg:text-6xl text-5xl">Contact Us</h1>
+      </div>
+    </section>
+
+    <section
+      class="bg-[#efede7] px-10 md:px-20 lg:px-[220px] py-20 lg:py-32 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+    >
+      <div class="text-gray-800 space-y-4">
+        <p class="text-sm font-semibold text-black uppercase tracking-wide">
+          THIS IS AN OVERLINE
+        </p>
+        <h1 class="text-4xl font-bold text-black leading-tight">
+          Send a direct message
+        </h1>
+        <p class="text-lg text-gray-700">
+          Bring to the table win-win survival strategies to ensure proactive
+          domination. At the end of the day, going forward, a new normal that
+          has evolved from generation is on the runway heading towards a
+          streamlined cloud solution.
+        </p>
+        <h1 class="text-2xl font-bold text-black leading-tight">
+          Follow on Social Media
+        </h1>
+        <p class="text-lg text-gray-700">
+          User generated content in real-time will have multiple touchpoints tor
+          ottshoring.
+        </p>
+        <a href="#" class="text-blue-700 text-2xl ml-1"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="#" class="text-[#2AA2F0] text-2xl mx-1"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="#" class="text-red-600 text-2xl mx-1"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="#" class="text-pink-600 text-2xl mx-1"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+
+      <form action="https://formsubmit.co/bhusalshiva010@gmail.com"  method="POST" class="w-full max-w-lg text-black bg-white px-10 py-24 shadow-md rounded-lg">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label for="fname" class="block cursor-pointer text-gray-700 font-bold text-sm mb-2">FIRST NAME *</label>
+                <input type="text" id="fname" placeholder="Your First Name" 
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+            <div>
+                <label for="lname" class="block cursor-pointer text-gray-700 font-bold text-sm mb-2">LAST NAME *</label>
+                <input id="lname" type="text" placeholder="Your Last Name" 
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+        </div>
+        <div class="mt-6">
+            <label for="email" class="block cursor-pointer text-gray-700 font-bold text-sm mb-2">EMAIL *</label>
+            <input id="email" type="email" placeholder="Email address" 
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none">
+        </div>
+
+        <div class="mt-6">
+            <label for="message" class="block cursor-pointer text-gray-700 font-bold text-sm mb-2">COMMENT OR MESSAGE *</label>
+            <textarea placeholder="Your message...." rows="6" id="message"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+        </div>
+
+        <div class="mt-6 text-center">
+            <button type="submit" class="bg-yellow-500 cursor-pointer text-gray-700 font-bold py-3 px-6 rounded-lg hover:bg-yellow-600 transition-all">
+                Send Message
+            </button>
+        </div>
+    </form>
+    </section>
+
+    <section class="bg-[#101935] px-6 md:px-16 lg:px-40 py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
+        <div class="w-full h-[35rem] rounded-lg overflow-hidden shadow-lg">
+            <iframe class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.773600849702!2d85.33484107547642!3d27.662475476208318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1968aa1fa39b%3A0xba0e785615c88f19!2sDropHills%20Web!5e0!3m2!1sen!2snp!4v1740633705206!5m2!1sen!2snp"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="space-y-4 font-bold md:pl-5 sm:pl-2">
+            <h1 class="text-3xl md:text-4xl py-4 font-bold text-white">Visit Our Office</h1>
+            
+            <div class="space-y-2 pt-4 ">
+                <p class="text-lg text-gray-200 font-semibold">📌 OUR ADDRESS</p>
+                <p class="text-lg text-gray-200">4814 Hewes Avenue</p>
+                <p class="text-lg text-gray-200">Salisbury, ML 21875</p>
+                </div>
+
+            <div class="space-y-8 pt-4">
+                <p class="text-lg text-gray-200 font-semibold">☎️ Call Us</p>
+                <p class="text-lg text-gray-200">Phone: +977-9841234567</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#101935]  text-white text-center py-6">
+        <p class="text-md font-bold">Copyright &#169; || 2025</p>
+        <button id="scrollUpBtn" class="fixed bottom-2 right-2 bg-amber-600 text-white px-4 py-3 rounded-full shadow-lg hidden">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
